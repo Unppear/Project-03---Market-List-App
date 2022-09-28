@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Square Peg', cursive;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 'header header header header'
+                         'main main';
+}
+header, main{
+    display: flex;
+}
+header{
+    margin: 0.5cm;
+    font-size: 15px;
+}
+main{
+    flex-flow: column;
+    margin: 0.5cm;
+}
+.lista-cadastro{
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+}
+#nomeP, #valorP, #btnSend{
+    border-radius: 15px;
+    padding: 7px;
+    background-color: white;
+    margin: 0 3px;
+    font-family: 'Square Peg', cursive;
+    font-weight: 900;
+    font-size: 20px;
+}
+#btnSend{
+    cursor: pointer;
+    transition: 0.5s;
+}
+#btnSend:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+.lista-produto{
+    padding: 20px;
+    margin: 0.5cm 0;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    min-height: 500px;
+}
+.lista-produto-single{
+    display: flex;
+    flex: 1;
+    border-bottom: 3px solid white;
+    justify-content: space-around;
+}
+h3{
+    border-left: 3px solid white;
+    padding: 7px;
+}
+.totalP{
+    display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 7px;
+    justify-content: center;
+    margin: 0 17cm;
+}
